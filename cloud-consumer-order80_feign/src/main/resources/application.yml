@@ -1,0 +1,22 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-customer-feign-service
+eureka:
+  client:
+    # false 代表不向服务注册中心注册自己，因为它本身就是服务中心
+    register-with-eureka: true
+    # false 代表自己就是服务注册中心，自己的作用就是维护服务实例，并不需要去检索服务
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
+feign:
+  client:
+    config:
+      default:
+        #简历连接所用的时间，适用于网络状况正常的情况下，两端连接所需要的时间
+        ConnectTimeOut: 5000
+        #指建立连接后从服务端读取到可用资源所用的时间
+        ReadTimeOut: 10000
