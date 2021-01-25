@@ -18,12 +18,12 @@
     <module>cloud-provider-payment8002</module>
     <module>cloud-provider-payment8004_zookeeper</module>
     <module>cloud-consumer-order80_zookeeper</module>
-      <module>cloud-provider-payment8006_consul</module>
-      <module>cloud-consumer-order80_consul</module>
-      <module>cloud-consumer-order80_feign</module>
+    <module>cloud-provider-payment8006_consul</module>
+    <module>cloud-consumer-order80_consul</module>
+    <module>cloud-consumer-order80_feign</module>
     <module>cloud-provider-payment8001_hystrix</module>
-      <module>cloud-consumer-order80_feign_hystrix</module>
-      <module>cloud-consumer-hystrix-dashboard9001</module>
+    <module>cloud-consumer-order80_feign_hystrix</module>
+    <module>cloud-hystrix-dashboard9001</module>
   </modules>
 
 
