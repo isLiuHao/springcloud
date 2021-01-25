@@ -21,6 +21,9 @@
       <module>cloud-provider-payment8006_consul</module>
       <module>cloud-consumer-order80_consul</module>
       <module>cloud-consumer-order80_feign</module>
+    <module>cloud-provider-payment8001_hystrix</module>
+      <module>cloud-consumer-order80_feign_hystrix</module>
+      <module>cloud-consumer-hystrix-dashboard9001</module>
   </modules>
 
 
@@ -110,6 +113,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.3.5.RELEASE</version>
         <configuration>
           <fork>true</fork>
           <addResources>true</addResources>
@@ -117,4 +121,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>

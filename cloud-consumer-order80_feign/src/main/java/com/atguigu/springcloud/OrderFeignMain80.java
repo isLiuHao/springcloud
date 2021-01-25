@@ -4,7 +4,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients
+@EnableFeignClients //不用再加@EnableEurekaClient
 public class OrderFeignMain80 {
 
     public static void main(String[] args) {
