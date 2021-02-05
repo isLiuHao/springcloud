@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloudalibaba-consumer-order84</artifactId>
+    <artifactId>cloudalibaba-consumer-order84_nacos_sentinel</artifactId>
 
     <dependencies>
         <!-- 加入open-feign -->
