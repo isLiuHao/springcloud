@@ -1,0 +1,16 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.0.102:8848  #nacos配置地址
+# http://192.168.0.102:8848/nacos 查看nacos注册中心
+#暴露端口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
